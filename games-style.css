@@ -1,0 +1,399 @@
+body{
+    background-color: #0A192F;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+#title {
+    margin-bottom: 15px; /* Reduced from default */
+    color: #95a5a6;
+    font-size: 2.5rem;
+    margin-left: 450px;
+}
+#title1 {
+    margin-bottom: 15px; /* Reduced from default */
+    color: #95a5a6;
+    font-size: 2.5rem;
+    margin-left: 50px;
+}
+#title {
+    margin-bottom: 15px; /* Reduced from default */
+    color: #95a5a6;
+    font-size: 2.5rem;
+    margin-left: 450px;
+}
+#title2{
+    margin-bottom: 15px; /* Reduced from default */
+    color: #95a5a6;
+    font-size: 2.5rem;
+    margin-left: 390px;
+}
+
+footer {
+    margin-top: 0.1px; /* Reduced margin */
+    padding: 0.1px; /* Reduced padding */
+}
+
+/* Optional: Add some padding to the body to prevent content from touching edges */
+body {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+span{
+    color: #42678d;
+}
+.games {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between buttons */
+    margin: 20px 0;
+}
+
+.challenge-button {
+    background-color: #244565; /* Keeping the original color */
+    padding: 15px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    min-width: 250px; /* Ensure buttons have enough width */
+    text-align: center;
+}
+.challenge-button:hover{
+    background-color: #78aee4;
+}
+
+.challenge-text {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* Optional: Add subtle shadow for depth */
+.challenge-button {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .games {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .challenge-button {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+
+.img{
+    max-width: clamp(100px, 20%, 200px);
+    display: block;
+    margin: 1rem auto;
+    
+}
+
+#footer{
+    
+    margin-top: 2rem auto;
+    text-align: center;
+    color: white;
+    padding: 0rem;
+}
+
+
+.back-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #42678d;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background: #78aee4;;
+}
+
+/* Update these styles in your style.css file */
+.navigation {
+    gap: 5px;
+}
+
+.categories-nav {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    gap: 100px; /* Increased from 20px to 40px */
+    margin: 70px 50px;
+     
+}
+
+
+.game-category-card {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    margin-bottom: 20px;
+}
+
+.category-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.category-card-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.category-image-container {
+    height: 80%;
+    position: relative;
+    overflow: hidden;
+}
+
+.category-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    
+}
+
+.category-info {
+    background-color: #112748;
+    color: white;
+    height: 10%;
+    padding: 24.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.category-info h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: white;
+}
+
+
+
+/* Add this media query for responsiveness */
+@media (max-width: 768px) {
+    .categories-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* Reduced gap for mobile view */
+    }
+
+    .category-btn {
+        width: 80%;
+        max-width: 300px; /* Maximum width for buttons on smaller screens */
+    }
+}
+.sub-titles1{ 
+    color:  #95a5a6;
+
+    
+    
+    font-family: 'Times New Roman', serif;
+}
+.sub-titles2{ 
+    color:  #95a5a6;
+   
+    font-size: clamp(2rem, 2.6vw, 6rem);
+    margin-left: 400px;
+    font-family: 'Times New Roman', serif;
+}
+.sub-titles1{ 
+    color:  #95a5a6;
+    margin: clamp(1rem, 2rem,4rem);
+    font-size: clamp(2rem, 2.6vw, 6rem);
+    padding: 1px 23%;
+    font-family: 'Times New Roman', serif;
+}
+.sub-titles3{ 
+    color:  #95a5a6;
+   
+    font-size: clamp(2rem, 2.6vw, 6rem);
+    margin-left: 250px;
+    font-family: 'Times New Roman', serif;
+}
+.games-grid{
+    
+    display: flex; /* Enable flexbox for the container */
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  gap: 20px; /* Adjust spacing between items */
+}
+.game-card{
+    display: flex; /* Enable flexbox for each game item */
+   flex-direction: column;
+  flex: 1 0 300px; /* Example: Each item takes at least 300px, can grow, but will wrap */
+  padding: 20px;
+  border: 1px solid #95a5a6; /* Optional border */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 70px;
+    max-width: 1400px;
+    margin: 0 auto;
+
+
+}
+
+.links a {
+    text-align: center;
+    display: inline-block;
+    padding: 8px 15px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #42678d; 
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+a:hover {
+    background-color: #95a5a6;
+    transform: scale(1.1);
+}
+
+.Back{
+    text-align: center;
+    display: inline-block;
+    padding: 8px 15px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #95a5a6; 
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    font-family: Arial, sans-serif;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.flip-card-front {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.card-top {
+
+    
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.ramadan-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover; /* This will make the image cover the entire space */
+    
+}
+
+
+
+.card-bottom {
+    background-color: #112748; /* Dark blue/black color */
+    color: white;
+    height: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-bottom h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.card-bottom p {
+    margin: 10px 0 0 0;
+    color: #95a5a6;
+}
+
+.flip-card-back {
+    background-color: #112748;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip-card-back a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.flip-card-back a:hover {
+    text-decoration: none;
+}
+
+@keyframes swing {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
